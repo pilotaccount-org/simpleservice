@@ -24,4 +24,13 @@ jobs:
       with:
         java-version: '16'
         distribution: 'temurin'
+    - run: |
+         echo "catting /home/runner/.m2/toolchains.xml"
+         cat /home/runner/.m2/toolchains.xml
+         echo
+         echo "catting /home/runner/.m2/settings.xml"
+         cat /home/runner/.m2/settings.xml
+         echo
+         echo "--------------------"
+         echo
     
