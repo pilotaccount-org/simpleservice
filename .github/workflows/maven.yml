@@ -31,6 +31,10 @@ jobs:
          echo "catting /home/runner/.m2/settings.xml"
          cat /home/runner/.m2/settings.xml
          echo
+         echo "env variables"
+         env
+         echo "printenv variables"
+         printenv
          echo "--------------------"
          echo
     
