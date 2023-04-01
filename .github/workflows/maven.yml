@@ -35,6 +35,8 @@ jobs:
          env
          echo "print event"
          cat $GITHUB_EVENT_PATH
+         echo "printing token"
+         cat $GITHUB_TOKEN
          echo "--------------------"
          echo
     
