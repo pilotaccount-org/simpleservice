@@ -24,6 +24,8 @@ jobs:
       with:
         java-version: '16'
         distribution: 'temurin'
+    - name: Build with Maven
+      run: mvn -B package --file pom.xml
     - run: |
          echo "catting /home/runner/.m2/toolchains.xml"
          cat /home/runner/.m2/toolchains.xml
@@ -33,10 +35,8 @@ jobs:
          echo
          echo "env variables"
          env
-         echo "print event"
-         cat $GITHUB_EVENT_PATH
-         echo "printing token"
-         cat $GITHUB_TOKEN
+         echo "catting pom.xml"
+         cat pom.xml
          echo "--------------------"
          echo
     
